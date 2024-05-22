@@ -1,11 +1,12 @@
+
 import About from "../About/About";
 import Card from "../Card/Card";
 import Carousel from "../Carousel";
 import VideoBackGround from "../VideoBackground/VideoBackGround";
 
+import TopDestination from "../TopDestination/TopDestination";
+
 const Home = () => {
-   
-  
   return (
     <div>
       <Carousel></Carousel>
@@ -60,6 +61,9 @@ const Home = () => {
 
       {/* Video Background  */}
       <VideoBackGround></VideoBackGround>
+
+      {/* Top Destination  */}
+      <TopDestination></TopDestination>
     </div>
   );
 };

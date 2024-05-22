@@ -1,3 +1,5 @@
+import About from "../About/About";
+import Card from "../Card/Card";
 import Carousel from "../Carousel";
 
 const Home = () => {
@@ -26,6 +28,13 @@ const Home = () => {
                 </div>
 
             </div>
+
+            {/* About  */}
+            <About></About>
+
+            {/* Card  */}
+            <Card></Card>
+
         </div>
     );
 }

@@ -16,7 +16,7 @@ const VideoBackGround = () => {
     };
 
     return (
-        <div className=" my-12 ">
+        <div className=" mt-24 ">
       <video
         ref={videoRef}
         className="rounded-[24px] shadow-lg  w-full h-[400px] object-cover"

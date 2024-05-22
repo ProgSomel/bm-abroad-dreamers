@@ -45,7 +45,7 @@ const TopDestination = () => {
   };
 
   return (
-    <div>
+    <div className="mt-24">
       <div className="border-indigo-500 border-l-[10px]">
         <div className="ml-4">
           <h1 className="text-[30px] md:text-[64px] font-bold font-oswald">
@@ -103,11 +103,11 @@ const TopDestination = () => {
                   }`}>
                     {hoveredSlide === index ? (
                       <div className="">
-                        <h1 className="mb-4 text-5xl font-bold font-oswald text-[40px]">{destination.title}</h1>
-                        <p className="px-12 font-poppins">{destination.description}</p>
+                        <h1 className="mb-16 text-5xl font-bold font-oswald text-[40px]">{destination.title}</h1>
+                        <p className="px-12 mb-4 font-poppins">{destination.description}</p>
                       </div>
                     ) : (
-                      <h1 className="mb-4 text-5xl font-bold absolute bottom-4 text-center left-0 right-0 font-oswald text-[40px]">{destination.title}</h1>
+                      <h1 className="mb-8 text-5xl font-bold absolute bottom-4 text-center left-0 right-0 font-oswald text-[40px]">{destination.title}</h1>
                     )}
                   </div>
                 </div>

@@ -5,8 +5,10 @@ import Carousel from "../Carousel";
 import VideoBackGround from "../VideoBackground/VideoBackGround";
 
 import TopDestination from "../TopDestination/TopDestination";
+import Testimonials from "../Testimonials/Testimonials";
 
 const Home = () => {
+   
   return (
     <div>
       <Carousel></Carousel>
@@ -64,6 +66,10 @@ const Home = () => {
 
       {/* Top Destination  */}
       <TopDestination></TopDestination>
+
+    {/* Testimonial  */}
+    <Testimonials></Testimonials>
+
     </div>
   );
 };

@@ -5,6 +5,7 @@ import VideoBackGround from "../VideoBackground/VideoBackGround";
 
 import TopDestination from "../TopDestination/TopDestination";
 import Testimonials from "../Testimonials/Testimonials";
+import Blog from "../Blog/Blog";
 
 const Home = () => {
   return (
@@ -127,6 +128,11 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+
+    {/* Blog  */}
+    <Blog></Blog>
+
     </div>
   );
 };

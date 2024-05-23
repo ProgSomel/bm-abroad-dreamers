@@ -6,8 +6,18 @@ import VideoBackGround from "../VideoBackground/VideoBackGround";
 import TopDestination from "../TopDestination/TopDestination";
 import Testimonials from "../Testimonials/Testimonials";
 import Blog from "../Blog/Blog";
+import "./Home.css";
+import "animate.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 300, // global duration of animations
+    });
+  }, []);
   return (
     <div>
       <Carousel></Carousel>
@@ -33,21 +43,25 @@ const Home = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <img
-            className="w-[200px]"
+            className="w-[200px] floating"
             src="https://cdn.sanity.io/images/s37229yn/production/f3fa9864e1f91e3cd430c792487cb3dfa6cf6723-1236x1348.png?w=320&auto=format"
             alt=""
           />
 
           <img
-            className="w-[200px]"
+            className="w-[200px] floating"
             src="https://cdn.sanity.io/images/s37229yn/production/5ea59722cab081f1ed105d2e166a30639a4b143e-5792x3600.png?w=320&auto=format"
             alt=""
           />
         </div>
 
-        <div className="flex justify-center">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="300"
+          className="flex justify-center "
+        >
           <img
-            className="h-[200px] bg-cover overflow-hidden"
+            className="h-[200px] bg-cover  "
             src="https://cdn.sanity.io/images/s37229yn/production/7c167e8391ffa0bc146a3e1747ea9209c669933c-3592x1440.png?rect=0,202,3592,1238&w=960&auto=format"
             alt=""
           />
@@ -70,14 +84,15 @@ const Home = () => {
       <Testimonials></Testimonials>
 
       {/* Ready to Start Your Journey  */}
-      <div className="bg-[#fff] rounded-[32px] p-8  lg:px-24 lg:py-16 shadow-lg">
+      <div data-aos="fade-up"
+          data-aos-duration="300" className="bg-[#fff] rounded-[32px] p-8  lg:px-24 lg:py-16 shadow-lg">
         <div className=" lg:hidden flex justify-center">
           <h1 className="font-oswald text-[30px] md:text-[44px] font-bold mb-12 text-center ">
             EADY TO START YOUR JOURNEY TO{" "}
             <div className="flex justify-center gap-3">
               <span className="text-indigo-700 ">
                 SUCCESS{" "}
-                <img 
+                <img
                   className="w-[100px] md:w-[160px]"
                   src="https://www.bmabroaddreamers.com/lines.png"
                   alt=""
@@ -90,20 +105,20 @@ const Home = () => {
         <div className="flex flex-col-reverse lg:flex-row items-center  gap-20">
           {/* content  */}
           <div className="lg:flex-1">
-          <h1 className="font-oswald text-[64px] font-bold hidden lg:block">
-            EADY TO START YOUR JOURNEY TO{" "}
-            <div className="flex  gap-4">
-              <span className="text-indigo-700 ">
-                SUCCESS{" "}
-                <img
-                  className="w-[230px]"
-                  src="https://www.bmabroaddreamers.com/lines.png"
-                  alt=""
-                />
-              </span>
-              ?
-            </div>
-          </h1>
+            <h1 className="font-oswald text-[64px] font-bold hidden lg:block">
+              EADY TO START YOUR JOURNEY TO{" "}
+              <div className="flex  gap-4">
+                <span className="text-indigo-700 ">
+                  SUCCESS{" "}
+                  <img
+                    className="w-[230px]"
+                    src="https://www.bmabroaddreamers.com/lines.png"
+                    alt=""
+                  />
+                </span>
+                ?
+              </div>
+            </h1>
             <p className="font-poppins text-[18px]  lg:my-16">
               At BM Study Dreamers, we believe that education knows no
               boundaries and success knows no limits. With our dedicated
@@ -129,10 +144,8 @@ const Home = () => {
         </div>
       </div>
 
-
-    {/* Blog  */}
-    <Blog></Blog>
-
+      {/* Blog  */}
+      <Blog></Blog>
     </div>
   );
 };

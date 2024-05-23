@@ -1,3 +1,5 @@
+import Aos from "aos";
+import { useEffect } from "react";
 
 const Card = () => {
   const cards = [
@@ -51,10 +53,18 @@ const Card = () => {
     },
   ];
 
+  useEffect(() => {
+    Aos.init({
+      duration: 3000, // global duration of animations
+    });
+  }, []);
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-24">
       {cards?.map((card, idx) => (
-        <div
+        <div 
+        data-aos="fade-up"
+        data-aos-duration="300"
           key={idx}
           className="group h-[470px] bg-white shadow-xl py-[29px] rounded-[24px] hover:text-white hover:bg-indigo-500 transition-colors duration-300"
         >

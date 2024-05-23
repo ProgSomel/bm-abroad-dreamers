@@ -1,57 +1,79 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import 'animate.css';
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import "swiper/swiper-bundle.css";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const Blog = () => {
-  const [blogs, setBlogs] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const { data } = await axios("blogs.json");
-        setBlogs(data);
-      } catch (error) {
-        console.error("Error fetching data: ", error);
-      }
-    };
-    fetchData();
-  }, []);
+    
+ const [blogs, setBlogs] = useState([]);
+
+ useEffect(() => {
+   const fetchData = async () => {
+     try {
+       const { data } = await axios("blogs.json");
+       setBlogs(data);
+     } catch (error) {
+       console.error("Error fetching data: ", error);
+     }
+   };
+   fetchData();
+ }, []);
+
+
+ 
 
   return (
-    <div className="mt-16 lg:mt-24">
+    <div className="mt-24">
       <div className="border-indigo-500 border-l-[10px]">
         <div className="ml-4">
           <h1 className="text-[30px] md:text-[64px] font-bold font-oswald">
             BLOGS
           </h1>
           <p className="font-poppins font-extralight">
-            Explore our latest blogs and articles
+            Study in your Dream Destination
           </p>
         </div>
       </div>
 
-      {/* Blog Card */}
-      <div>
+      {/* Slide */}
+      <div className="my-12">
         <Swiper
-          slidesPerView={3}
+          slidesPerView={1} // default to 1 slide per view
           spaceBetween={30}
           loop={true}
           autoplay={{
             delay: 2000,
             disableOnInteraction: false,
           }}
-          modules={[Navigation, Autoplay, Pagination]}
-
           pagination={{
             clickable: true,
           }}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+          modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
           {blogs.map((blog, index) => (
             <SwiperSlide className="mt-12"  key={index}>
-              <div className="card card-compact w-96 ">
+              <div className="card card-compact lg:w-96 ">
                 <figure>
                   <img
                     src={blog?.image}
@@ -64,7 +86,7 @@ const Blog = () => {
                     <span><img src="https://www.bmabroaddreamers.com/icons/calender.svg" alt="" /></span>
                     <p className="text-[14px] font-light text-[$#0003]">{blog?.date}</p>
                   </div>
-                  <p className="text-[24px] font-semibold font- my-12 leading-8">{blog?.description}</p>
+                  <p className="text-[24px] font-semibold  my-12 leading-8  w-3/4 lg:w-full">{blog?.description}</p>
                  
                 </div>
               </div>
@@ -75,5 +97,7 @@ const Blog = () => {
     </div>
   );
 };
+
+Blog.propTypes = {};
 
 export default Blog;

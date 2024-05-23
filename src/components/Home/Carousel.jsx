@@ -10,7 +10,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const Carousel = () => {
   return (
-    <div className="my-6">
+    <div className="mt-36">
       <Swiper
         spaceBetween={30}
         loop={true}

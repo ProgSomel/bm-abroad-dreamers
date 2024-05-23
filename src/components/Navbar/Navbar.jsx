@@ -9,7 +9,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="relative shadow-lg my-4 rounded-[25px] bg-white">
+        <nav className=" fixed w-full mx-auto mt-4 z-[100] shadow-lg rounded-[25px] bg-transparent top-0">
             <div className="container px-6 lg:px-[32px] py-[14px] mx-auto md:flex md:justify-between md:items-center ">
                 <div className="flex items-center justify-between">
                     <a to="#">

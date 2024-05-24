@@ -157,6 +157,66 @@ const Service = () => {
         </div>
 
       </div>
+
+    {/* Second banner  */}
+    <div className="px-8 lg-px-0 py-5">
+        <img className="rounded-[24px]" src="https://cdn.sanity.io/images/s37229yn/production/1fd4512c14cbc1d3f3245f4296f1676ed45f2841-6400x3624.png?w=1920&auto=format" alt="" />
+    </div>
+
+
+     {/* Study Abroad Services Tourism Services */}
+     <div className="mt-24 px-8 lg:px-0">
+        <div className="border-indigo-500 border-l-[10px]">
+          <div className="ml-4">
+            <h1 className="text-[30px] md:text-[64px] font-bold font-oswald">
+            TOURISM SERVICES
+            </h1>
+            <p className="font-poppins font-extralight">
+            we're also your gateway to unforgettable tourism experiences.
+            </p>
+          </div>
+        </div>
+
+        <div className="p-3 lg:p-20 flex flex-col-reverse lg:flex-row items-center gap-20">
+            <div className="space-y-8 lg:w-1/2">
+               <div>
+               <div className="flex items-center gap-3">
+                <img className="w-[30px] h-[30px]" src="https://cdn.sanity.io/images/s37229yn/production/fa9c4fc39cf1a787324cee0181cdf2d5251dd02a-60x35.png?w=60&auto=format" alt="" />
+                <p className="text-[#290886] font-poppins text-[24px]">Air Ticket Booking:</p>
+                </div>
+                <p className="font-poppins text-[14px] mt-2">Take the stress out of travel planning with our expert air ticket booking services. We'll find the best flight options that suit your preferences and budget.</p>
+               </div>
+               <div>
+               <div className="flex items-center gap-3">
+                <img className="w-[30px] h-[30px]" src="https://cdn.sanity.io/images/s37229yn/production/9acb2763d675de73c57a150d0189636a3bf8b294-60x60.png?w=60&auto=format" alt="" />
+                <p className="text-[#290886] font-poppins text-[24px]">Customized Tour Packages:</p>
+                </div>
+                <p className="font-poppins text-[14px] mt-2">Your travel experience should be as unique as you are. That's why we offer customized tour packages tailored to your interests and desires.</p>
+               </div>
+               <div>
+               <div className="flex items-center gap-3">
+                <img className="w-[30px] h-[30px]" src="https://cdn.sanity.io/images/s37229yn/production/a94e0841d982b47887826ea2006419b48900abe4-60x60.png?w=60&auto=format" alt="" />
+                <p className="text-[#290886] font-poppins text-[24px]">Effortless Exploration:</p>
+                </div>
+                <p className="font-poppins text-[14px] mt-2">Leave the logistics to us. We take care of the details, so you can focus on creating incredible memories.</p>
+               </div>
+               <div>
+               <div className="flex items-center gap-3">
+                <img className="w-[30px] h-[30px]" src="https://cdn.sanity.io/images/s37229yn/production/29d0dfa7a74628d125d81f034d4511637f8a0f4f-30x30.svg?w=30&auto=format" alt="" />
+                <p className="text-[#290886] font-poppins text-[24px]">Pathway to Residence:</p>
+                </div>
+                <p className="font-poppins text-[14px] mt-2">For those with dreams of permanent residence, we provide guidance on how your study journey can lead to residency in your dream destination.</p>
+               </div>
+            </div>
+
+            {/* image  */}
+            <div className="lg:w-1/2 mt-12 lg:mt-0">
+                <img className="w-full h-[full] lg:w-[665px] lg:h-[480px] rounded-[24px]" src="https://cdn.sanity.io/images/s37229yn/production/9c974cba5febec27db89085285c7727ecc52d496-5999x3999.jpg?w=960&auto=format" alt="" />
+            </div>
+        </div>
+
+      </div>
+
     </div>
   );
 };

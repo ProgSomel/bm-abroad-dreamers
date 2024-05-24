@@ -12,9 +12,9 @@ const Navbar = () => {
         <nav className=" fixed w-full mx-auto mt-4 z-[100] shadow-lg rounded-[25px] bg-transparent top-0">
             <div className="container px-6 lg:px-[32px] py-[14px] mx-auto md:flex md:justify-between md:items-center ">
                 <div className="flex items-center justify-between">
-                    <a to="#">
+                    <Link to="/">
                         <img className="w-auto h-14" src="https://cdn.sanity.io/images/s37229yn/production/576084e1b9545990e38bc6ccee63646f2b0b0742-756x276.png?w=320&auto=format" alt="Logo"/>
-                    </a>
+                    </Link>
 
                     <div className="flex md:hidden">
                         <button 

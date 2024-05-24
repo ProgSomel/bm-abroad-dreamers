@@ -37,7 +37,7 @@ const Navbar = () => {
                        <Link className='font-poppins font-medium' to="/storyOfus">
                             STORY OF US
                        </Link>
-                       <Link className='font-poppins font-medium' to="/storyOfus">
+                       <Link className='font-poppins font-medium' to="/services">
                             SERVICES
                        </Link>
                        <Link className='font-poppins font-medium' to="/storyOfus">

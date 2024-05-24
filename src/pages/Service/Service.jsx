@@ -217,6 +217,24 @@ const Service = () => {
 
       </div>
 
+      {/* second Photo Gallery  */}
+      <div className="grid grid-cols-3 md:col-span-4 lg:grid-cols-4 gap-5 lg:relative lg:mb-[400px] px-8 lg:px-0">
+        <img className="col-span-2 md:w-[600px] lg:col-span-2 w-[350px]  h-[100px] lg:w-[609px] lg:h-[322px]" src="https://cdn.sanity.io/images/s37229yn/production/0b7e97dcf2b39496a8fc92b1339d36979c08a5b6-2616x1740.png?w=640&auto=format" alt="" />
+        <img className="w-[350px] h-[100px] lg:h-[322px]" src="https://cdn.sanity.io/images/s37229yn/production/cfe3f86b89fcc585e308beeef2835af255939e99-1528x1740.png?w=640&auto=format" alt="" />
+        <img className="w-[400px] h-[100px] lg:h-[422px] " src="https://cdn.sanity.io/images/s37229yn/production/806bdf46ec50c37475ab24c7752dce3cb9023eb1-2068x2636.png?w=640&auto=format" alt="" />
+        <img  className="h-[100px] w-[300px] md:w-[510px] lg:w-[356px] lg:h-[320px]
+        lg:absolute lg:top-[350px]
+        col-span-2 lg:col-span-1
+        " src="https://cdn.sanity.io/images/s37229yn/production/b3182143c70e9046e6a88e146e719800ae83a74c-1528x2192.png?w=640&auto=format" alt="" />
+        <img className=" h-[150px] w-[200px] md:w-[400px] lg:w-[480px] lg:h-[320px] md:h-[100px] 
+        lg:absolute lg:left-[380px] lg:top-[345px]
+        " src="https://cdn.sanity.io/images/s37229yn/production/b6f7e06c32a02a2139486098acdfc7a1cbf21da6-2612x2192.png?w=640&auto=format" alt="" />
+        <img className="w-[300px] md:w-[510px] lg:w-[270px] h-[100px] lg:h-[222px]  
+        col-span-2 lg:col-span-1
+        lg:absolute lg:left-[880px] lg:top-[440px]
+        " src="https://cdn.sanity.io/images/s37229yn/production/c41825524a985529bc281c027c982ba980bd23b6-2068x1308.png?w=640&auto=format" alt="" />
+      </div>
+
     </div>
   );
 };

@@ -8,7 +8,7 @@ const Main = () => {
             <div className="">
             <Navbar></Navbar>
             </div>
-            <div className="min-h-screen  ">
+            <div className="min-h-screen  max-w-7xl mx-auto px-4 lg:px-7 ">
             <Outlet></Outlet>
             </div>
             <Footer></Footer>

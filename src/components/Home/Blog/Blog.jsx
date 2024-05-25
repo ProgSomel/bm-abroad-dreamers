@@ -47,11 +47,11 @@ const Blog = () => {
       {/* Slide */}
       <div className="my-12">
         <Swiper
-          slidesPerView={1} // default to 1 slide per view
+          slidesPerView={1} 
           spaceBetween={30}
           loop={true}
           autoplay={{
-            delay: 2000,
+            delay: 1500,
             disableOnInteraction: false,
           }}
           pagination={{

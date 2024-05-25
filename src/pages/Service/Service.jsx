@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useEffect } from "react";
-import "./Service.css";
 import Aos from "aos";
+import Timeline from "./Timeline";
 
 const Service = () => {
   useEffect(() => {
@@ -11,9 +11,9 @@ const Service = () => {
   }, []);
 
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="">
       {/* Banner Section */}
-      <div className="pt-8 lg:pt-32 px-8 lg:px-0">
+      <div className="pt-8 lg:pt-32 px-8 lg:px-0 max-w-6xl mx-auto">
         <div className="pt-24">
           <h1
             c
@@ -49,7 +49,7 @@ const Service = () => {
       </div>
 
       {/* Photo Gallery Section */}
-      <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 lg:relative p-5 lg:p-0 mt-8 lg:mt-16">
+      <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 lg:relative p-5 lg:p-0 mt-8 lg:mt-16 max-w-6xl mx-auto">
         {" "}
         <img
           data-aos="fade-up"
@@ -96,7 +96,7 @@ const Service = () => {
       </div>
 
       <div>
-        <h1 className="font-poppins text-[32px] w-3/4 mx-auto text-center mt-5 lg:mt-16">
+        <h1 className="font-poppins text-[32px] w-3/4 mx-auto text-center mt-5 lg:mt-16 max-w-6xl mx-auto">
           We offer a diverse range of services to cater to your aspirations.
           Whether you're planning to study abroad or embark on a memorable
           tourism adventure, we've got you covered.
@@ -104,7 +104,7 @@ const Service = () => {
       </div>
 
       {/* Study Abroad Services  */}
-      <div className="mt-24 px-8 lg:px-0">
+      <div className="mt-24 px-8 lg:px-0 max-w-6xl mx-auto">
         <div className="border-indigo-500 border-l-[10px]">
           <div className="ml-4">
             <h1 className="text-[30px] md:text-[64px] font-bold font-oswald">
@@ -194,8 +194,13 @@ const Service = () => {
         </div>
       </div>
 
+      {/* Time Line  */}
+      <div>
+        <Timeline></Timeline>
+      </div>
+
       {/* Second banner  */}
-      <div className="px-8 lg-px-0 py-5">
+      <div className="px-8 lg-px-0 py-5 max-w-6xl mx-auto">
         <img
           className="rounded-[24px]"
           src="https://cdn.sanity.io/images/s37229yn/production/1fd4512c14cbc1d3f3245f4296f1676ed45f2841-6400x3624.png?w=1920&auto=format"
@@ -204,7 +209,7 @@ const Service = () => {
       </div>
 
       {/* Study Abroad Services Tourism Services */}
-      <div className="mt-24 px-8 lg:px-0">
+      <div className="mt-24 px-8 lg:px-0 max-w-6xl mx-auto">
         <div className="border-indigo-500 border-l-[10px]">
           <div className="ml-4">
             <h1 className="text-[30px] md:text-[64px] font-bold font-oswald">
@@ -299,7 +304,7 @@ const Service = () => {
       </div>
 
       {/* second Photo Gallery  */}
-      <div className="grid grid-cols-3 md:col-span-4 lg:grid-cols-4 gap-5 lg:relative lg:mb-[400px] px-8 lg:px-0">
+      <div className="grid grid-cols-3 md:col-span-4 lg:grid-cols-4 gap-5 lg:relative lg:mb-[400px] px-8 lg:px-0 max-w-6xl mx-auto">
         <img
           data-aos="fade-up"
           data-aos-duration="1000"

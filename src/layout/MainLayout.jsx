@@ -1,13 +1,12 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
+import Footer from "../components/Footer/Footer"
 
-const Main = () => {
+const MainLayout = () => {
     return (
         <div>
-            <div className="">
-            <Navbar></Navbar>
-            </div>
+             <Navbar></Navbar>
+           
             <div className="min-h-screen  max-w-7xl mx-auto px-4 lg:px-7 ">
             <Outlet></Outlet>
             </div>
@@ -17,9 +16,9 @@ const Main = () => {
 };
 
 
-Main.propTypes = {
+MainLayout.propTypes = {
 
 };
 
 
-export default Main;
+export default MainLayout;
